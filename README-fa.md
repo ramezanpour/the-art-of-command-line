@@ -5,17 +5,18 @@ _[Čeština](README-cs.md) ∙ [Deutsch](README-de.md) ∙ [Ελληνικά](RE
 
 _توجه: من در نظر دارم تا این را مقاله را بازبینی کنم و برای این کار به دنبال نویسنده دیگری می‌گردم تا به من در گسترش این مقاله و تبدیل آن یک راهنمای کامل‌تر کمک کند. از آنجایی که این خیلی پرطرفدار است، می‌تواند بسیار گسترده‌تر و در عین حال عمیق‌تر باشد. اگر شما تمایل به نویسندگی دارید و در این حوزه متخصص هستید و از همه مهم‌تر تمایل به همکاری دارید، لطفا یک ایمیل به josh (0x40) holloway.com ارسال کنید. –[jlevy](https://github.com/jlevy), [Holloway](https://www.holloway.com). با تشکر از شما!_
 
-- [Meta](#meta)
-- [Basics](#basics)
-- [Everyday use](#everyday-use)
-- [Processing files and data](#processing-files-and-data)
-- [System debugging](#system-debugging)
-- [One-liners](#one-liners)
-- [Obscure but useful](#obscure-but-useful)
-- [macOS only](#macos-only)
-- [Windows only](#windows-only)
-- [More resources](#more-resources)
-- [Disclaimer](#disclaimer)
+- [توضیح مختصر](#توضیح-مختصر)
+- [اصول اولیه](#اصول-اولیه)
+- [استفاده روزانه](#استفاده-روزمره)
+- [پردازش فایل‌ها و اطلاعات](#پردازش-فایل‌ها-و-اطلاعات)
+- [اشکال‌زدایی سیستم](#اشکال‌زدایی-سیستم)
+- [نک‌خطی‌ها](#نک‌خطی‌ها)
+- [مبهم ولی کاربردی](#مبهم-ولی-کاربردی)
+- [فقط برای مک‌او‌اس](#فقط-برای-مک‌او‌اس)
+- [فقط برای ویندوز](#فقط-برای-ویندوز)
+- [منابع بیشتر](#منابع-بیشتر)
+- [رفع مسئولیت](#رفع-مسئولیت)
+- [مجوز](#مجوز)
 
 ![curl -s 'https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md' | egrep -o '`\w+`' | tr -d '`' | cowsay -W50](cowsay.png)
 
@@ -29,7 +30,7 @@ on [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-
 but it has since moved to GitHub, where people more talented than the original author have made numerous improvements.
 [**Please submit a question**](https://airtable.com/shrzMhx00YiIVAWJg) if you have a question related to the command line. [**Please contribute**](/CONTRIBUTING.md) if you see an error or something that could be better!
 
-## Meta
+## توضیح مختصر
 
 Scope:
 
@@ -43,7 +44,7 @@ Notes:
 - To keep this to one page, content is implicitly included by reference. You're smart enough to look up more detail elsewhere once you know the idea or command to Google. Use `apt`, `yum`, `dnf`, `pacman`, `pip` or `brew` (as appropriate) to install new programs.
 - Use [Explainshell](http://explainshell.com/) to get a helpful breakdown of what commands, options, pipes etc. do.
 
-## Basics
+## اصول اولیه
 
 - Learn basic Bash. Actually, type `man bash` and at least skim the whole thing; it's pretty easy to follow and not that long. Alternate shells can be nice, but Bash is powerful and always available (learning _only_ zsh, fish, etc., while tempting on your own laptop, restricts you in many situations, such as using existing servers).
 
@@ -73,7 +74,7 @@ Notes:
 
 - Learn to use `apt-get`, `yum`, `dnf` or `pacman` (depending on distro) to find and install packages. And make sure you have `pip` to install Python-based command-line tools (a few below are easiest to install via `pip`).
 
-## Everyday use
+## استفاده روزمره
 
 - In Bash, use **Tab** to complete arguments or list all available commands and **ctrl-r** to search through command history (after pressing, type to search, press **ctrl-r** repeatedly to cycle through more matches, press **Enter** to execute the found command, or hit the right arrow to put the result in the current line to allow editing).
 
@@ -216,7 +217,7 @@ EOF
 5
 ```
 
-## Processing files and data
+## پردازش فایل‌ها و اطلاعات
 
 - To locate a file by name in the current directory, `find . -iname '*something*'` (or similar). To find a file anywhere by name, use `locate something` (but bear in mind `updatedb` may not have indexed recently created files).
 
@@ -318,7 +319,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 - To create empty files quickly, use `truncate` (creates [sparse file](https://en.wikipedia.org/wiki/Sparse_file)), `fallocate` (ext4, xfs, btrfs and ocfs2 filesystems), `xfs_mkfile` (almost any filesystems, comes in xfsprogs package), `mkfile` (for Unix-like systems like Solaris, Mac OS).
 
-## System debugging
+## اشکال‌زدایی سیستم
 
 - For web debugging, `curl` and `curl -I` are handy, or their `wget` equivalents, or the more modern [`httpie`](https://github.com/jkbrzt/httpie).
 
@@ -361,7 +362,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 - If you delete a file and it doesn't free up expected disk space as reported by `du`, check whether the file is in use by a process:
   `lsof | grep deleted | grep "filename-of-my-big-file"`
 
-## One-liners
+## نک‌خطی‌ها
 
 A few examples of piecing together commands:
 
@@ -414,7 +415,7 @@ A few examples of piecing together commands:
       }
 ```
 
-## Obscure but useful
+## مبهم ولی کاربردی
 
 - `expr`: perform arithmetic or boolean operations or evaluate regular expressions
 
@@ -560,7 +561,7 @@ A few examples of piecing together commands:
 
 - `fortune`, `ddate`, and `sl`: um, well, it depends on whether you consider steam locomotives and Zippy quotations "useful"
 
-## macOS only
+## فقط برای مک‌او‌اس
 
 These are items relevant _only_ on macOS.
 
@@ -578,7 +579,7 @@ These are items relevant _only_ on macOS.
 
 - To get macOS release information, use `sw_vers`.
 
-## Windows only
+## فقط برای ویندوز
 
 These items are relevant _only_ on Windows.
 
@@ -614,7 +615,7 @@ These items are relevant _only_ on Windows.
 
 - Note that a `C:\` Windows drive path becomes `/cygdrive/c` under Cygwin, and that Cygwin's `/` appears under `C:\cygwin` on Windows. Convert between Cygwin and Windows-style file paths with `cygpath`. This is most useful in scripts that invoke Windows programs.
 
-## More resources
+## منابع بیشتر
 
 - [awesome-shell](https://github.com/alebcay/awesome-shell): A curated list of shell tools and resources.
 - [awesome-osx-command-line](https://github.com/herrbischoff/awesome-osx-command-line): A more in-depth guide for the macOS command line.
@@ -623,11 +624,11 @@ These items are relevant _only_ on Windows.
 - [Filenames and Pathnames in Shell](http://www.dwheeler.com/essays/filenames-in-shell.html): The sadly complex minutiae on how to handle filenames correctly in shell scripts.
 - [Data Science at the Command Line](http://datascienceatthecommandline.com/#tools): More commands and tools helpful for doing data science, from the book of the same name
 
-## Disclaimer
+## رفع مسئولیت
 
 With the exception of very small tasks, code is written so others can read it. With power comes responsibility. The fact you _can_ do something in Bash doesn't necessarily mean you should! ;)
 
-## License
+## مجوز
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
