@@ -32,12 +32,12 @@ _توجه: من در نظر دارم تا این را مقاله را بازبی
 
 ## توضیح مختصر
 
-Scope:
+محدوده:
 
-- This guide is for both beginners and experienced users. The goals are _breadth_ (everything important), _specificity_ (give concrete examples of the most common case), and _brevity_ (avoid things that aren't essential or digressions you can easily look up elsewhere). Every tip is essential in some situation or significantly saves time over alternatives.
-- This is written for Linux, with the exception of the "[macOS only](#macos-only)" and "[Windows only](#windows-only)" sections. Many of the other items apply or can be installed on other Unices or macOS (or even Cygwin).
-- The focus is on interactive Bash, though many tips apply to other shells and to general Bash scripting.
-- It includes both "standard" Unix commands as well as ones that require special package installs -- so long as they are important enough to merit inclusion.
+- این راهنما هم برای تازه کارها و هم برای با تجربه هاست. اهداف عبارتند از _جامع بودن_ (ذکر همه موارد مهم)، _مشخص بودن_ (ارائه مثال‌های مشخص از پرکاربردترین موارد)، _مختصر بودن_ (اجتناب از موارد غیرضروری و مواردی که می‌توانید به راحتی جایی دیگر پیدا کنید). تمام نکات ارائه شده به نحوی ضروری هستند و یا در مقایسه با سایر راهکارها به طور چشم‌گیری باعث صرفه‌جویی در وقت شما می‌شوند.
+- این راهنما بجز قسمت‌های «[فقط برای مک‌او‌اس](#فقط-برای-مک‌او‌اس)» و «[فقط برای ویندوز](#فقط-برای-ویندوز)»، برای لینوکس نوشته شده است. سایر موارد ارائه شده قابل اجرا یا نصب بر روی سایر دستگاه‌ها یا مک‌او‌اس (ویا حتی Cygwin) می‌باشند.
+- تمرکز اصلی بر روی Bash تعاملی خواهد بود، هرچند خیلی از نکات ارائه شده قابل استفاده در سایر Shellها نیز خواهند بود.
+- این شامل هم دستورات «استاندارد» یونیکس و هم دستوراتی که نیازمند نصب بسته خاصی هستند خواهند بود -- تا جایی که آنقدر مهم باشند که ارزش گنجاندن در این راهنما را داشته باشند.
 
 Notes:
 
