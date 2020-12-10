@@ -20,15 +20,15 @@ _توجه: من در نظر دارم تا این را مقاله را بازبی
 
 ![curl -s 'https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md' | egrep -o '`\w+`' | tr -d '`' | cowsay -W50](cowsay.png)
 
-Fluency on the command line is a skill often neglected or considered arcane, but it improves your flexibility and productivity as an engineer in both obvious and subtle ways. This is a selection of notes and tips on using the command-line that we've found useful when working on Linux. Some tips are elementary, and some are fairly specific, sophisticated, or obscure. This page is not long, but if you can use and recall all the items here, you know a lot.
+روان کار کردن با خط فرمان یک مهارت به شمار می‌آید که معمولا یا مورد توجه قرار نمی‌گیرد و یا به سخره گرفته می‌شود، اما درواقع استفاده از آن به عنوان یک مهندس بازدهی و انعطاف‌پذیری شما را به شکل محسوسی بالا خواهد برد. این مقاله گلچینی از یادداشت‌ها و نکاتی برای استفاده از خط فرمان لینوکس است که از نظر ما کاربری هستند. برخی از این نکات مقدماتی، بعضی از آنها نسبتا شاخص، پیچیده، و یا مبهم هستند. این مقاله خیلی طولانی نیست؛ ولی اگر شما بتوانید از تمام مواردی که در آن ذکر شده استفاده کنید، آنگاه خیلی خواهید دانست.
 
-This work is the result of [many authors and translators](AUTHORS.md).
-Some of this
-[originally](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands)
-[appeared](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix)
-on [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know),
-but it has since moved to GitHub, where people more talented than the original author have made numerous improvements.
-[**Please submit a question**](https://airtable.com/shrzMhx00YiIVAWJg) if you have a question related to the command line. [**Please contribute**](/CONTRIBUTING.md) if you see an error or something that could be better!
+این کار نتیجه تلاش [تعداد زیادی مؤلف و مترجم](AUTHORS.md) است.
+تعدادی از این قبیل مقالات
+[ابتدا](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands) در
+[کورا](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know)
+[نمایان شد](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix)
+، اما بعد به گیت‌هاب منتقل شد و افرادی بسیار بااستعداد تر از نویسنده اصلی بهبود‌های قابل‌توجهی در آن ایجاد کردند.
+اگر سوالی مربوط به خط فرمان دارید [**لطفا آن را بپرسید**](https://airtable.com/shrzMhx00YiIVAWJg). اگر خطا یا مساله‌ای می‌بینید که نیاز به بهبود دارد [**لطفا مشارکت کنید**](/CONTRIBUTING.md).
 
 ## توضیح مختصر
 
