@@ -46,19 +46,21 @@ _توجه: من در نظر دارم تا این را مقاله را بازبی
 
 - برای بدست آوردن اطلاعات اولیه از اینکه دستورها، گزینه‌ها، لوله‌ها و غیره چطور کار می‌کنند، از [Explainshell](http://explainshell.com/) استفاده کنید.
 
-</div>
-
 ## اصول اولیه
 
-- Learn basic Bash. Actually, type `man bash` and at least skim the whole thing; it's pretty easy to follow and not that long. Alternate shells can be nice, but Bash is powerful and always available (learning _only_ zsh, fish, etc., while tempting on your own laptop, restricts you in many situations, such as using existing servers).
+- اصول اولیه Bash را یاد بگیرید. در واقع، با استفاده از دستور `man bash` یک نگاه اجمالی به کلیت آن داشته باشید؛ یادگیری آن ساده و خیلی هم طولانی نیست. سایر Shellها هم خوب هستند، اما Bash قدرتمند و همیشه هم در دسترس است. یادگیری _فقط_ zsh، fish و غیره شاید روی لپ‌تاپ خودتان هیجان انگیز باشد اما شما را در شرایط مختلف، برای مثال کار با سرورهای موجود، محدود می‌کند.
 
-- Learn at least one text-based editor well. The `nano` editor is one of the simplest for basic editing (opening, editing, saving, searching). However, for the power user in a text terminal, there is no substitute for Vim (`vi`), the hard-to-learn but venerable, fast, and full-featured editor. Many people also use the classic Emacs, particularly for larger editing tasks. (Of course, any modern software developer working on an extensive project is unlikely to use only a pure text-based editor and should also be familiar with modern graphical IDEs and tools.)
+- حداقل یک ویرایشگر متن را به خوبی یاد بگیرید. ویرایشگر `nano` یکی از ساده‌ترین‌ها برای ویرایش‌های ابتدایی مانند باز کردن، ویرایش، ذخیره و جستجو می‌باشد. هرچند، برای یک کاربر حرفه‌ای ترمینال، هیچ جایگزینی برای Vim (`vi`)، ویرایشگری سخت برای یادگیری ولی مقدس، وجود ندارد. خیلی‌ها هم از Emacs استفاده می‌کنند مخصوصا زمانی که می‌خواهند کارهای ویرایشی بزرگتری انجام دهند. (البته که هر برنامه نویسی که روی پروژه‌های بزرگتر کار می‌کند بعید است که فقط از یک ویرایشگر متن ساده استفاده کند و احتمالا باید با ویرایشگرهای جدیدتر و یا IDEهای گرافیکی نیز آشنا باشد.)
 
-- Finding documentation:
+- پیدا کردن مستندات:
 
-  - Know how to read official documentation with `man` (for the inquisitive, `man man` lists the section numbers, e.g. 1 is "regular" commands, 5 is files/conventions, and 8 are for administration). Find man pages with `apropos`.
-  - Know that some commands are not executables, but Bash builtins, and that you can get help on them with `help` and `help -d`. You can find out whether a command is an executable, shell builtin or an alias by using `type command`.
-  - `curl cheat.sh/command` will give a brief "cheat sheet" with common examples of how to use a shell command.
+  - بدانید چطور مستندات را با دستور `man` بخوانید. برای کنجکاوی، دستور `man man` لیستی از شماره بخش‌ها ارائه می‌دهد. برای مثال بخش ۱ دستورات «معمولی»، ۵ فایل‌ها/قراردادها و ۸ برای مدیران سیستم می‌باشد. شما همچنین می‌توانید با `apropos` محتویات تمام مستندات را جستجو کنید.
+  - بدانید که برخی از دستورات قابل اجرا نیستند، بجز دستوراتی که به‌همراه Bash ارائه شده‌اند. برای دریافت کمک می‌توانید از `help` و `help -d` استفاده نمایید. برای اینکه بفهمید یک دستور قابل اجرا، دستور پیش‌فرض shell و یا alias هست یا نه می‌توانید از دستور `type command` استفاده کنید.
+  - دستور `curl cheat.sh/command` یک «برگه تقلب» مختصر به شما می‌دهد که شامل مثال‌های رایج از نحوه استفاده از دستورات shell است.
+
+- هدایت خروجی و ورودی با استفاده از `>` و `<` و پایپ‌ها با استفاده از `|` را یاد بگیرید. بدانید که `>` فایل خروجی را بازنویسی و `>>` به آن اضافه می‌کند. درباره `stdout` و `stderr` یاد بگیرید.
+
+</div>
 
 - Learn about redirection of output and input using `>` and `<` and pipes using `|`. Know `>` overwrites the output file and `>>` appends. Learn about stdout and stderr.
 
